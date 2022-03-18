@@ -1,20 +1,20 @@
 import java.util.Scanner;
 
-public class Exercicio04 { //Início programa
+public class Exercicio04 { //InÃ­cio programa
 	
-	public static void main(String[] args) {// Início main
+	public static void main(String[] args) {// InÃ­cio main
 		
 		Scanner leitor = new Scanner(System.in);
 		
 		String[] matriculas = new String[3];
 		
 		for (int i = 0; i < 3; i++) {
-			System.out.println("Digite a matrícula " + (i + 1) + ":");
+			System.out.println("Digite a matrÃ­cula " + (i + 1) + ":");
 			matriculas[i] = leitor.nextLine();
 		}
 		
 		for (int i = 0; i < 3; i++) {
-			System.out.println("Matrícula " + (i + 1) + ": " + matriculas[i]);
+			System.out.println("MatrÃ­cula " + (i + 1) + ": " + matriculas[i]);
 		}		
 		
 		String[] nomes = new String[3];
@@ -98,29 +98,29 @@ public class Exercicio04 { //Início programa
 		
 		if (nFinal[0] >=6) {
 			
-			System.out.println("Reprovado");
+			System.out.println("Aprovado");
 			
 		} else {
 			
-			System.out.println("Aprovado");
+			System.out.println("Reprovado");
 		}
 	
 		if (nFinal[1] >=6) {
 			
-			System.out.println("Reprovado");
+			System.out.println("Aprovado");
 			
 		} else {
 			
-			System.out.println("Aprovado");
+			System.out.println("Reprovado");
 		}
 		
 		if (nFinal[2] >=6) {
 			
-			System.out.println("Reprovado");
+			System.out.println("Aprovado");
 			
 		} else {
 			
-			System.out.println("Aprovado");
+			System.out.println("Reprovado");
 		}
 		
 	} //Fim main
