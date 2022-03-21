@@ -88,9 +88,9 @@ public class Exercicio04 { //Início programa
 		double[] nFinal = new double [3];
 
 		
-		nFinal[0] = Double.parseDouble(n1[0]) + Double.parseDouble(n2[0]) + Double.parseDouble(n3[0]) + Double.parseDouble(n4[0]) + Double.parseDouble(n5[0]) /2;
-		nFinal[0] = Double.parseDouble(n1[1]) + Double.parseDouble(n2[1]) + Double.parseDouble(n3[1]) + Double.parseDouble(n4[1]) + Double.parseDouble(n5[1]) /2;
-		nFinal[0] = Double.parseDouble(n1[2]) + Double.parseDouble(n2[2]) + Double.parseDouble(n3[2]) + Double.parseDouble(n4[2]) + Double.parseDouble(n5[2]) /2;
+		nFinal[0] = Double.parseDouble(n1[0])*0.05 + Double.parseDouble(n2[0])*0.05 + Double.parseDouble(n3[0])*0.2 + Double.parseDouble(n4[0])*0.2 + Double.parseDouble(n5[0])*0.5 /2;
+		nFinal[0] = Double.parseDouble(n1[1])*0.05 + Double.parseDouble(n2[1])*0.05 + Double.parseDouble(n3[1])*0.2 + Double.parseDouble(n4[1])*0.2 + Double.parseDouble(n5[1])*0.5 /2;
+		nFinal[0] = Double.parseDouble(n1[2])*0.05 + Double.parseDouble(n2[2])*0.05 + Double.parseDouble(n3[2])*0.2 + Double.parseDouble(n4[2])*0.2 + Double.parseDouble(n5[2])*0.5 /2;
 		
 		System.out.println("Nota final 1: " + nFinal[0]);
 		System.out.println("Nota final 2: " + nFinal[1]);
