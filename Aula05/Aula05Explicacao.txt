@@ -1,0 +1,7 @@
+TIPOS PRIMITIVOS:
+int
+float
+double
+boolean
+char
+long
