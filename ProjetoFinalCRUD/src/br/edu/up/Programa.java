@@ -31,18 +31,18 @@ public class Programa {
 			while(menu != 5) {
 				menu();
 				
-				System.out.println("Digite a opção desejada:");
-				opcao = leitor.nextInt();
+				System.out.println("Digite a opÃ§Ã£o desejada:");
+				opcao = Integer.parseInt(leitor.nextLine());
 				
 				if(opcao == 1) {
 					System.out.println("NOVO JOGADOR");
 					
 					System.out.println("Nome: ");
-					String nomeJogador = leitor.next();
-					System.out.println("Posição: ");
-					String posicaoJogador = leitor.next();
+					String nomeJogador = leitor.nextLine();
+					System.out.println("PosiÃ§Ã£o: ");
+					String posicaoJogador = leitor.nextLine();
 					System.out.println("Altura (em cm): ");
-					int alturaJog = leitor.nextInt();
+					int alturaJog = Integer.parseInt(leitor.nextLine());
 					
 					cadastrarJogador(nomeJogador, posicaoJogador, alturaJog);
 					
@@ -52,13 +52,13 @@ public class Programa {
 					System.out.println("ATUALIZAR DADOS DO JOGADOR");
 					
 					System.out.println("Id: ");
-					int id = leitor.nextInt();
+					int id = Integer.parseInt(leitor.nextLine());
 					System.out.println("Nome: ");
-					String nomeJogador = leitor.next();
-					System.out.println("Posição: ");
-					String posicaoJogador = leitor.next();
+					String nomeJogador = leitor.nextLine();
+					System.out.println("PosiÃ§Ã£o: ");
+					String posicaoJogador = leitor.nextLine();
 					System.out.println("Altura (em cm): ");
-					int alturaJog = leitor.nextInt();
+					int alturaJog = Integer.parseInt(leitor.nextLine());
 					
 					atualizarJogador(id, nomeJogador, posicaoJogador, alturaJog);
 					opcao = 0;
@@ -70,15 +70,15 @@ public class Programa {
 					opcao = 0;
 				}
 				else if(opcao == 4) {
-					System.out.println("Digite o ID do jogador para removê-lo:");
-					int id = leitor.nextInt();
+					System.out.println("Digite o ID do jogador para removÃª-lo:");
+					int id = Integer.parseInt(leitor.nextLine());
 					apagar(id);
 				}
 				
 				
 				
 				else if(opcao == 5) {
-					System.out.println("Operação realizada com sucesso!");
+					System.out.println("OperaÃ§Ã£o realizada com sucesso!");
 					menu = 5;
 					break;
 					
@@ -150,7 +150,7 @@ public class Programa {
 
 		System.out.println(".......................................");	
 		System.out.println("---------------------------------------");
-		System.out.println("ID | Jogador | Posição | Altura" );
+		System.out.println("ID | Jogador | PosiÃ§Ã£o | Altura" );
 		System.out.println("---------------------------------------");
 		for (Jogador jogador2 : jogador) {
 			System.out.println(jogador2.getId() + " | " +  jogador2.getNomeJogador() + " | " + jogador2.getPosicao() + " | " + jogador2.getAlturaJog());
